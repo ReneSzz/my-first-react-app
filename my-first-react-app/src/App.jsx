@@ -5,7 +5,7 @@ import './App.css'
 import Person from './components/personDetails'
 import Education from './components/education'
 import Experience from './components/experience'
-
+import Resume from './components/resume'
 
 
 
@@ -16,10 +16,14 @@ function App() {
  
   return (
     <>
-   
+    <div id='wrapper'>
+   <div id="inputSections">
     <Person> </Person>
     <Education></Education>
     <Experience></Experience>
+    </div>
+    <Resume></Resume>
+    </div>
     </>
   )
 }
