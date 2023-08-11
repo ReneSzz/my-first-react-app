@@ -94,7 +94,7 @@ button:focus-visible {
   background-color: white;
   border-radius: 10px;
   width: 800px;
-  height: 850px;
+  height: 885px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,12 @@ button:focus-visible {
  text-align: left;
 }
 
+#inputSections > * {
+  margin-bottom: 1rem;
+}
+
 #wrapper {
   display: flex;
   flex-direction: row;
+  gap: 8rem;
 }

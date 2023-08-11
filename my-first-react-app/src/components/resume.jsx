@@ -6,7 +6,7 @@ function Resume() {
       <>
      
       <div id='resume'>
-           
+           <h1> Resume </h1>
 
       </div>
       </>
