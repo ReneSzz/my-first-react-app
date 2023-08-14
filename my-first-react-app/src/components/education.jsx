@@ -1,7 +1,13 @@
 import { useState } from 'react'
 
 
-function Education() {
+
+function Education(props) {
+  
+   
+
+
+
     const [schoolName, setSchoolName] = useState('');
     const [degree, setDegree] = useState('');
     const [startDate, setStartDate] = useState('');
@@ -11,6 +17,7 @@ function Education() {
     
     return (
        <>
+
        <div className='card'>
           <h2>{'Education'}</h2>
           <div className='inputGroup'>
@@ -32,6 +39,7 @@ function Education() {
           <label htmlFor="endDate">End Date:  </label>
           <input type="text" placeholder="Enter End Date" value={endDate} onChange={(e) => setEndDate(e.target.value) }></input>
           </div>
+         <button onClick={() => props.alert(schoolName)} >Submit</button>
          
           </div>
        </>

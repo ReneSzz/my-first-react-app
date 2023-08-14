@@ -29,6 +29,7 @@ function Person() {
           <label htmlFor="phone">Phone Number:  </label>
           <input id='phone' type="tel" placeholder='xxx-xxx-xxxx' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value) }></input>
           </div>
+          <button>Submit</button>
           </div>
        </>
     )

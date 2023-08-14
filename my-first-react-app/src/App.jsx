@@ -14,12 +14,20 @@ import Resume from './components/resume'
 
 function App() {
  
+  function ParentMove (data)
+ {
+
+
+  console.log(data)
+
+
+ }
   return (
     <>
     <div id='wrapper'>
    <div id="inputSections">
     <Person> </Person>
-    <Education></Education>
+    <Education alert={ParentMove}></Education>
     <Experience></Experience>
     </div>
     <Resume></Resume>
