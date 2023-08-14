@@ -31,7 +31,7 @@ function Experience() {
           <label htmlFor="endDate">End Date:  </label>
           <input type="text" placeholder="Enter End Date" value={endDate} onChange={(e) => setEndDate(e.target.value) }></input>
           </div>
-         
+          <button>Submit</button>
           </div>
        </>
     )

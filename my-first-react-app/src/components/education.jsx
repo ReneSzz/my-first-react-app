@@ -39,7 +39,7 @@ function Education(props) {
           <label htmlFor="endDate">End Date:  </label>
           <input type="text" placeholder="Enter End Date" value={endDate} onChange={(e) => setEndDate(e.target.value) }></input>
           </div>
-         <button onClick={() => props.alert(schoolName)} >Submit</button>
+         <button  onClick={() => props.alert(schoolName, degree, startDate,endDate)} >Submit</button>
          
           </div>
        </>

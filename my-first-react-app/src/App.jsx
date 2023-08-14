@@ -14,11 +14,11 @@ import Resume from './components/resume'
 
 function App() {
  
-  function ParentMove (data)
+  function ParentMove (data,data2,data3,data4)
  {
 
 
-  console.log(data)
+  console.log(data,data2,data3,data4)
 
 
  }
