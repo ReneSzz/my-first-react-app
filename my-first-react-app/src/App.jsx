@@ -14,13 +14,13 @@ import Resume from './components/resume'
 
 function App() {
  
+  const [info2, setInfo2] = useState('');
+
   function ParentMove (data,data2,data3,data4)
  {
 
-
-  console.log(data,data2,data3,data4)
-
-
+  setInfo2(data);
+ 
  }
   return (
     <>
@@ -28,9 +28,9 @@ function App() {
    <div id="inputSections">
     <Person> </Person>
     <Education alert={ParentMove}></Education>
-    <Experience></Experience>
+    <Experience alert={ParentMove}></Experience>
     </div>
-    <Resume></Resume>
+    <Resume info={info2} />
     </div>
     </>
   )

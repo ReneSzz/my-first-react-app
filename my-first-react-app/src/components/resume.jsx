@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Education from './education'
 
 
-function Resume() {
+function Resume({info}) {
 
 
     return (
@@ -10,7 +10,7 @@ function Resume() {
     
       <div id='resume'>
     
-           <h1></h1>
+           <h1>{info}</h1>
            
           
 

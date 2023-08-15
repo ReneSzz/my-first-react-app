@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-function Experience() {
+function Experience(props) {
     const [experienceName, setExperienceName] = useState('');
     const [jobTitle, setjobTitle] = useState('');
     const [startDate, setStartDate] = useState('');
@@ -31,7 +31,7 @@ function Experience() {
           <label htmlFor="endDate">End Date:  </label>
           <input type="text" placeholder="Enter End Date" value={endDate} onChange={(e) => setEndDate(e.target.value) }></input>
           </div>
-          <button>Submit</button>
+          <button  onClick={() => props.alert(experienceName, jobTitle, startDate,endDate)} >Submit</button>
           </div>
        </>
     )
