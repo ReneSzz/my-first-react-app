@@ -14,7 +14,7 @@ import Resume from './components/resume'
 
 function App() {
  
-  const [info2, setInfo2] = useState('');
+  const [info2, setInfo2] = useState('Rene Suarez');
 
   function ParentMove (data,data2,data3,data4)
  {
