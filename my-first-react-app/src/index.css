@@ -38,10 +38,13 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.3em;
+  line-height: 0.5;
 }
 
+hr{
+  border-top: 1px solid black;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -104,11 +107,11 @@ button:focus-visible {
 
 #resumeHeader {
   width: 865px;
-  height: 185px;
+  height: 155px;
   display: flex;
   flex-direction: column;
   background-color: #DBE4EE;
-  word-wrap: break-word
+ 
 }
 
 #resumeBody {
@@ -120,15 +123,22 @@ button:focus-visible {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
 
 }
 
 
 .resumeSection {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
   text-align: left;
   overflow-wrap: break-word;
+}
 
+.resumeSection > h2{
+  margin-bottom: -2%;
+  
 }
 .inputGroup{
   display: flex;
@@ -147,4 +157,11 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   gap: 8rem;
+}
+
+
+#rowWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

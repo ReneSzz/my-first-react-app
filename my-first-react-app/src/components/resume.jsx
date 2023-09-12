@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Education from './education'
 
 
-function Resume({info}) {
+function Resume({universityName, degree, personName, phoneNumber}) {
 
 
     return (
@@ -13,19 +13,34 @@ function Resume({info}) {
 
         <div id='resumeHeader'> 
           
-          <h1>{info}</h1>
-          <h3>Rene Suarez </h3>
+          <h1>{personName}</h1>
+          <div id='rowWrapper'>
+          <h4>Email: renesuarez@gmail.com</h4>
+          <h4>Phone Number: {phoneNumber}</h4>
+          </div>
 
         </div>
 
         <div id='resumeBody'>
+        
+        
+        <div className='resumeSection'>
+
+        <h2>{universityName}</h2>
+        <p>Bachelors of {degree} </p>
+        
+     
+        </div>
+         
          
           <div className='resumeSection'>
 
             <h2>Section 1 </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores ipsum provident eaque,Reiciendis maiores ipsum provident eaque,</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciend is maiores ipsum provident eaque,Reiciendis maiores ipsum provident eaque,</p>
 
           </div>
+
+          <hr></hr>
 
           <div className='resumeSection'>
             <h2>Section 2</h2>

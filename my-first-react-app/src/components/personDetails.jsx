@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-function Person() {
+function Person(props) {
     const [fullName, setFullName] = useState('');
 
     const [email, setEmail] = useState('');
@@ -29,7 +29,8 @@ function Person() {
           <label htmlFor="phone">Phone Number:  </label>
           <input id='phone' type="tel" placeholder='xxx-xxx-xxxx' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value) }></input>
           </div>
-          <button>Submit</button>
+          
+          <button onClick={() => props.alert(fullName, phoneNumber)} >Submit</button>
           </div>
        </>
     )

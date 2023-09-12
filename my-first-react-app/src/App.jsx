@@ -14,23 +14,34 @@ import Resume from './components/resume'
 
 function App() {
  
-  const [info2, setInfo2] = useState('Rene Suarez');
+  const [universityName, setUniversityName] = useState('OCAD University');
+  const [degree, setDegree] = useState('Computer Science');
+  const [personName, setPersonName] = useState('Rene Suarez');
+  const [phoneNumber, setPhoneNumber] = useState('XXX-XXX-XXXX');
 
-  function ParentMove (data,data2,data3,data4)
+
+  function EducationSetting(data,data2,)
  {
 
-  setInfo2(data);
+  setUniversityName(data);
+  setDegree(data2);
  
+ }
+
+ function personData(data,data2)
+ {
+  setPersonName(data);
+  setPhoneNumber(data2);
  }
   return (
     <>
     <div id='wrapper'>
    <div id="inputSections">
-    <Person> </Person>
-    <Education alert={ParentMove}></Education>
-    <Experience alert={ParentMove}></Experience>
+    <Person  >  </Person>
+    <Education alert={EducationSetting}></Education>
+    <Experience ></Experience>
     </div>
-    <Resume info={info2} />
+    <Resume universityName={universityName} degree={degree} personName={personName} phoneNumber={phoneNumber}/>
     </div>
     </>
   )

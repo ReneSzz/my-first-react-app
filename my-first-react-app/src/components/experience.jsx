@@ -18,7 +18,7 @@ function Experience(props) {
          
           <div className='inputGroup'>
           <label htmlFor="jobTitle">Job Title:  </label>
-          <input type="text" placeholder="Software Developer" value={jobTitle} onChange={(e) => setExperienceName(e.target.value) }></input>
+          <input type="text" placeholder="Software Developer" value={jobTitle} onChange={(e) => setjobTitle(e.target.value) }></input>
           </div>
          
 
