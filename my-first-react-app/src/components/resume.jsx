@@ -26,8 +26,8 @@ function Resume({universityName, degree, personName, phoneNumber}) {
         
         <div className='resumeSection'>
 
-        <h2>{universityName}</h2>
-        <p>Bachelors of {degree} </p>
+        <h2>Education</h2>
+        <p>{universityName} - Bachelors of {degree} </p>
         
      
         </div>
